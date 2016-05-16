@@ -1,0 +1,52 @@
+body {
+	min-width: 500px;
+}
+
+header {
+	margin: 2em 0 4em 2em;
+}
+
+h1 {
+	font-size: 2.5em;
+}
+
+h2 {
+	font-size: 1.5em;
+	font-weight: 300;
+	margin-top: 0.75em;
+}
+
+img {
+	display: block;
+	width: 400px;
+	margin: 0 auto 3em auto;
+}
+
+@media (min-width: 750px) {
+	html, body {
+		height: 100%;
+		overflow: hidden;
+	}
+
+	header {
+		margin: 3em 0 8em 3em;
+	}
+
+	h1 {
+		font-size: 1.5em;
+	}
+
+	h2 {
+		font-size: 1em;
+	}
+
+	main {
+		margin: 0 3em 0 3em;
+	}
+
+	img {
+		display: initial;
+		width: 15.5%;
+		margin-right: 4%;
+	}
+}
