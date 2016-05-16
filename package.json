@@ -1,0 +1,23 @@
+{
+  "name": "steal_like_an_artist",
+  "version": "1.0.0",
+  "description": "Steal Like An Artist",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/newyork-anthonyng/steal_like_an_artist.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/newyork-anthonyng/steal_like_an_artist/issues"
+  },
+  "homepage": "https://github.com/newyork-anthonyng/steal_like_an_artist#readme",
+  "dependencies": {
+    "express": "^4.13.4"
+  }
+}
