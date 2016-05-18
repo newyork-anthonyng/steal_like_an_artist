@@ -4,14 +4,14 @@ const express = require('express');
 const app = express();
 const path = require('path');
 
-app.use(express.static('01_Communicate_Using_Space'));
+app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', (req, res) => {
 	res.sendFile(path.join(__dirname + '/index.html'));
 });
 
 app.get('/1', (req, res) => {
-	res.sendFile(path.join(__dirname + '/01_Communicate_Using_Space/index.html'));
+	res.sendFile(path.join(__dirname + '/public/01_Communicate_Using_Space/index.html'));
 });
 
 const server = app.listen(process.env.PORT || 3000, () => {
