@@ -5,8 +5,8 @@ Steal Like An Artist
 ### Wireframes
 1. Web
 
-![Mobile](./01_Communicate_Using_Space/assets/Wireframes/01_Mobile.png)
+![Mobile](./public/01_Communicate_Using_Space/assets/Wireframes/01_Mobile.png)
 
 2. Mobile
 
-![Web](./01_Communicate_Using_Space/assets/Wireframes/02_Web.png)
+![Web](./public/01_Communicate_Using_Space/assets/Wireframes/02_Web.png)
