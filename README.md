@@ -3,10 +3,14 @@ Steal Like An Artist
 ## 01. Communicate Using Space
 
 ### Wireframes
-1. Web
+1. Communicate Using Space
 
-![Mobile](./01_Communicate_Using_Space/assets/Wireframes/01_Mobile.png)
+![Mobile](./public/01_Communicate_Using_Space/assets/Wireframes/01_Mobile.png)
 
-2. Mobile
+![Web](./public/01_Communicate_Using_Space/assets/Wireframes/02_Web.png)
 
-![Web](./01_Communicate_Using_Space/assets/Wireframes/02_Web.png)
+2. GarberCo.
+
+![Mobile](./public/02_GarberCo/assets/Wireframes/01_Mobile.png)
+
+![Web](./public/02_GarberCo/assets/Wireframes/02_Web.png)
