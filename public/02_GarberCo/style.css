@@ -28,6 +28,24 @@ a:nth-child(2) {
 	float: right;
 }
 
+section, main {
+	position: absolute;
+	top: 25vh;
+	height: 200px;
+	width: 100%;
+	transition: left 2s;
+}
+
+section {
+	left: -100%;
+	background-color: lightgreen;
+}
+
+main {
+	left: 0%;
+	background-color: yellow;
+}
+
 @media (min-width: 750px) {
 }
 
