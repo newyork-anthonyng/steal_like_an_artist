@@ -10,3 +10,29 @@ window.onload = function() {
 function removeClassName(classList, classToRemove) {
 	return classList.replace(new RegExp(classToRemove), '');
 };
+
+function showAboutPage() {
+	var aboutPage = document.getElementsByTagName('section')[0];
+	var mainPage = document.getElementsByTagName('main')[0];
+
+	movePage(window.Page, aboutPage, mainPage);
+	updatePageStatus();
+};
+
+function movePage(pageStatus, aboutPage, mainPage) {
+	if(pageStatus === 'left') {
+		aboutPage.style.left = '-100%';
+		mainPage.style.left = '0%';
+	} else {
+		aboutPage.style.left = '0%';
+		mainPage.style.left = '100%';
+	}
+}
+
+function updatePageStatus() {
+	if(window.Page === 'left') {
+		window.Page = 'right';
+	} else {
+		window.Page = 'left';
+	}
+}
