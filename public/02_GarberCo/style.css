@@ -6,7 +6,8 @@ body {
 * Loading Styles
 */
 
-.loading nav {
+.loading nav,
+.loading main {
 	display: none;
 }
 
@@ -48,6 +49,7 @@ a:nth-child(3) {
 }
 
 section, main {
+	display: block;
 	height: 200px;
 	position: absolute;
 	top: 25vh;
