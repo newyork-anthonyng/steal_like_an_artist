@@ -1,13 +1,20 @@
+body {
+	min-width: 350px;
+}
+
 /**
 * Loading Styles
 */
 
-.loading h1 {
-	margin-top: 40vh;
-}
-
 .loading nav {
 	display: none;
+}
+
+.loading h1 {
+	display: block;
+	font-size: 4em;
+	margin-top: 40vh;
+	text-align: center;
 }
 
 /**
@@ -15,38 +22,51 @@
 */
 
 h1 {
-	margin-top: 1em;
+	display: none;
+}
+
+nav {
+	padding: 3em 1.25em 0 1.25em;
+}
+
+span {
+	display: inline-block;
+	font-size: 2em;
 	text-align: center;
+	width: 47%;
 }
 
 a {
 	color: black;
+	display: inline-block;
 	text-decoration: none;
+	width: 25%;
 }
 
-a:nth-child(2) {
-	float: right;
+a:nth-child(3) {
+	text-align: right;
 }
 
 section, main {
+	height: 200px;
 	position: absolute;
 	top: 25vh;
-	height: 200px;
+	transition: left 1s;
 	width: 100%;
-	transition: left 2s;
 }
 
 section {
+	font-size: 2em;
 	left: -100%;
-	background-color: lightgreen;
+}
+
+section p {
+	padding: 0 1.25em 0 1.25em;
 }
 
 main {
 	left: 0%;
-	background-color: yellow;
 }
 
 @media (min-width: 750px) {
 }
-
-
