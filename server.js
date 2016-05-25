@@ -14,6 +14,10 @@ app.get('/1', (req, res) => {
 	res.sendFile(path.join(__dirname + '/public/01_Communicate_Using_Space/index.html'));
 });
 
+app.get('/2', (req, res) => {
+	res.sendFile(path.join(__dirname + '/public/02_GarberCo/index.html'));
+});
+
 const server = app.listen(process.env.PORT || 3000, () => {
 	console.log('Server running on ' + server.address().port);
 });
