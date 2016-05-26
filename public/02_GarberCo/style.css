@@ -66,8 +66,35 @@ section p {
 	padding: 0 1.25em 0 1.25em;
 }
 
+/**
+* Image Styles
+*/
+
 main {
 	left: 0%;
+}
+
+main div {
+	margin-bottom: 5em;
+}
+
+main h2 {
+	font-size: 1.5em;
+	text-align: center;
+
+}
+
+img {
+	display: block;
+	margin: 0 auto 1em auto;
+}
+
+.img-tall {
+	width: 50%;
+}
+
+.img-wide {
+	width: 90%;
 }
 
 @media (min-width: 750px) {
