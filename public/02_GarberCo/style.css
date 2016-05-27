@@ -99,6 +99,7 @@ main h2 {
 img {
 	display: block;
 	margin: 0 auto 1em auto;
+	cursor: pointer;
 }
 
 .img-tall {
@@ -109,5 +110,31 @@ img {
 	width: 90%;
 }
 
-@media (min-width: 750px) {
+@media (min-width: 650px) {
+	main div {
+		display: inline-block;
+		width: 48%;
+		margin-bottom: 2em;
+		height: 20em;
+	}
+
+	main h2 {
+		display: none;
+	}
+
+	.img-wide {
+		top: 20%;
+		position: relative;
+	}
+
+	.img-tall {
+		top: 14%;
+		position: relative;
+	}
+}
+
+@media (min-width: 850px) {
+	main div {
+		width: 30%;
+	}
 }
