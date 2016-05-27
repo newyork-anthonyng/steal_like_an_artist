@@ -34,6 +34,7 @@ h1 {
 }
 
 nav {
+	min-width: 350px;
 	padding: 3em 5% 0 5%;
 	position: fixed;
 	width: 90%;
@@ -75,6 +76,7 @@ section {
 }
 
 section p {
+	line-height: 1.5em;
 	padding: 0 1.25em 0 1.25em;
 }
 
@@ -139,10 +141,19 @@ img {
 		top: 50%;
 		transform: translateY(-50%);
 	}
+
+	section p {
+		font-size: 1.25em;
+		line-height: 1.5em;
+	}
 }
 
 @media (min-width: 850px) {
 	main div {
 		width: 30%;
+	}
+
+	section p {
+		font-size: 1.5em;
 	}
 }
