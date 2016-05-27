@@ -118,18 +118,28 @@ img {
 		height: 20em;
 	}
 
+	main div:hover h2 {
+		display: block;
+	}
+
 	main h2 {
 		display: none;
+		font-size: 5em;
+		left: 0;
+		position: fixed;
+		top: 50%;
+		width: 100%;
+		z-index: 1;
 	}
 
 	.img-wide {
-		top: 20%;
 		position: relative;
+		top: 20%;
 	}
 
 	.img-tall {
-		top: 14%;
 		position: relative;
+		top: 14%;
 	}
 }
 
