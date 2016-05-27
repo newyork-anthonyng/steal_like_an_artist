@@ -20,12 +20,16 @@ function showAboutPage() {
 };
 
 function movePage(pageStatus, aboutPage, mainPage) {
+	var body = document.getElementsByTagName('body')[0];
+
 	if(pageStatus === 'left') {
 		aboutPage.style.left = '-100%';
 		mainPage.style.left = '0%';
+		body.classList = '';
 	} else {
 		aboutPage.style.left = '0%';
 		mainPage.style.left = '100%';
+		body.classList = 'about';
 	}
 }
 

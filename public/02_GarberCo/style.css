@@ -3,6 +3,11 @@ body {
 	font-family: 'Open Sans', sans-serif;
 }
 
+body.about {
+	overflow-y: hidden;
+	overflow-x: hidden;
+}
+
 /**
 * Loading Styles
 */
@@ -64,6 +69,7 @@ section, main {
 }
 
 section {
+	position: fixed;
 	font-size: 2em;
 	left: -100%;
 }
