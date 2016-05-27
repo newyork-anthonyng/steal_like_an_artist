@@ -128,18 +128,16 @@ img {
 		left: 0;
 		position: fixed;
 		top: 50%;
+		transform: translateY(-50%);
 		width: 100%;
 		z-index: 1;
 	}
 
-	.img-wide {
-		position: relative;
-		top: 20%;
-	}
-
+	.img-wide,
 	.img-tall {
 		position: relative;
-		top: 14%;
+		top: 50%;
+		transform: translateY(-50%);
 	}
 }
 
