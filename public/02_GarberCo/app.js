@@ -17,14 +17,17 @@ function showAboutPage() {
 
 function movePage(body, aboutPage, mainPage) {
 	var onAboutPage = body.classList.contains('about');
+	var aboutLink = document.getElementsByTagName('a')[0];
 
 	if(onAboutPage) {
 		aboutPage.style.left = '-100%';
 		mainPage.style.left = '0%';
 		body.classList.remove('about');
+		aboutLink.innerHTML = 'About';
 	} else {
 		aboutPage.style.left = '0%';
 		mainPage.style.left = '100%';
 		body.classList.add('about');
+		aboutLink.innerHTML = '>';
 	}
 }
