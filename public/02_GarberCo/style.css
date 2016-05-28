@@ -56,8 +56,18 @@ a {
 	width: 25%;
 }
 
-a:nth-child(3) {
+nav a:nth-child(3) {
 	text-align: right;
+}
+
+.about nav a:nth-child(3) {
+	display: none;
+}
+
+section a {
+	display: inline;
+	font-size: 1em;
+	text-decoration: underline;
 }
 
 section, main {
@@ -65,7 +75,7 @@ section, main {
 	height: 200px;
 	position: absolute;
 	top: 25vh;
-	transition: left 1s;
+	transition: left 0.75s;
 	width: 100%;
 }
 
@@ -113,10 +123,14 @@ img {
 }
 
 @media (min-width: 650px) {
+	a {
+		font-size: 1.25em;
+	}
+
 	main div {
 		display: inline-block;
 		width: 48%;
-		margin-bottom: 2em;
+		margin-bottom: 6em;
 		height: 20em;
 	}
 
@@ -150,7 +164,9 @@ img {
 
 @media (min-width: 850px) {
 	main div {
-		width: 30%;
+		width: 33%;
+		margin-bottom: 6em;
+		margin-top: 6em;
 	}
 
 	section p {
