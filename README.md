@@ -14,3 +14,9 @@ Steal Like An Artist
 ![Mobile](./public/02_GarberCo/assets/Wireframes/01_Mobile.png)
 
 ![Web](./public/02_GarberCo/assets/Wireframes/02_Web.png)
+
+3. Ariel Wen Zhang
+
+![Mobile](./public/03_ArielWenZhang/assets/Wireframes/01_Mobile.png)
+
+![Web](./public/03_ArielWenZhang/assets/Wireframes/02_Web.png)
