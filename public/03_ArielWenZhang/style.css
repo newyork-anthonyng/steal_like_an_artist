@@ -1,0 +1,29 @@
+nav {
+	background-color: white;
+	left: 0;
+	position: fixed;
+	width: 100%;
+	top: 0;
+}
+
+nav ul {
+	float: right;
+	list-style: none;
+}
+
+nav li {
+	float: left;
+	text-transform: uppercase;
+}
+
+#home {
+	height: 25em;
+	margin-top: 4em;
+	position: relative;
+}
+
+#logo-animation {
+	bottom: 0;
+	position: absolute;
+	right: 0;
+}
