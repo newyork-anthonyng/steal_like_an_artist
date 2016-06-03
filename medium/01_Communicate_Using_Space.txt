@@ -1,0 +1,21 @@
+Lessons Learned
+	1. Semantic HTML
+	Semantic: relating to meaning in language or logic.
+
+	In the context of HTML, being semantic means using the available tags for their god-given purpose, instead of creating div's and classes that do the same task.
+
+	I used the <header> and <main> tags, and avoided using any <div> tags.
+
+	2. Vanilla CSS
+	I want to keep my code at a minimum, and that includes CSS.
+
+	Vanilla CSS was enough for what I needed on this project and I didn't have to worry about the additional overhead of a (relatively) large CSS framework like Bootstrap. I found that when working with a CSS framework, you spend more time hacking !important to get the styles the way you want them.
+
+	3. Media Queries
+	With media queries, don't feel obligated to use the most popular breakpoints. Design your mobile layout first, then set breakpoints for when your design just starts looking like crap.
+
+Improvements
+	This was a simple design that I was happy with.
+
+Inspiration
+	Chuck Close | Work. Design by Mark Melnick.
