@@ -1,10 +1,13 @@
+Over the next year, I will be copying/reproducing designs and creating websites from them.
+
 Why this project?
+
 1. My design skills are crap
 
-2. Read "Steal Like An Artist" by Austin Kleon
+2. I read "Steal Like An Artist" by Austin Kleon. So now I'll...
 
 3. Find "art" that I love and copy it shamelessly
 
-4. Become a frankenstein of all artists you stole from
+4. Become a frankenstein of all artists I stole from.
 
-By doing this, I'll be working on a large number of projects in a short amount of time. I'll also be able to take a look at existing code and see how the pros do it.
+By working on so many projects, hopefully I'll become a somewhat respectful designer.
