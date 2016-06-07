@@ -1,0 +1,19 @@
+02. GarberCo
+
+Lessons Learned
+	1. Vanilla JavaScript
+		I learned to embrace vanilla JavaScript. I want to get away with avoiding jQuery as much as possible. It doesn't make sense to add all this weight of jQuery just to use a couple of convenient selectors. Especially when there's a lot of pretty great built in Web APIs.
+
+	2. Grunt
+		I used Grunt with cssmin to minify my CSS files. Smaller files means faster client download!
+
+	3. ClassName vs. ClassList
+		I have seen a lot of custom JavaScript functions to add a class to an element. And I had used this before, having only heard of element.className API.
+	className returns a space separated string of all the element's classes. You can also set the className with a string, but you will override any existing classes.
+	While browsing through the API, I discovered ClassList. This returns to you an object with properties that let you add a class, remove a class, toggle a class, and check if the element contains the class. What more can you ask for??
+
+Improvements
+	I would want to have used translate3d to move between the "About" and "Home" page, instead of using just the position: X CSS property.
+
+Inspiration
+	www.garberco.com
