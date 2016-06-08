@@ -60,3 +60,73 @@ describe('textTracker', function() {
 		});
 	});
 });
+
+describe('#typingDisplay', function() {
+
+	describe('#set', function() {
+		afterEach(function() {
+			typingDisplay.clear();
+		});
+
+		it('should set current text', function() {
+			expect(typingDisplay.getFullText()).not.toBeDefined();
+			typingDisplay.set('abc');
+
+			expect(typingDisplay.getFullText()).toEqual('abc');
+		});
+
+		it('should only accept strings', function() {
+			var result = typingDisplay.set(123);
+			expect(result).toBe(false);
+
+			expect(typingDisplay.getFullText()).not.toBeDefined();
+		});
+	});
+
+	describe('#getFullText', function() {
+
+		it('should get full current text', function() {
+			typingDisplay.set('abc');
+			expect(typingDisplay.getFullText()).toEqual('abc');
+		});
+	});
+
+	describe('#clear', function() {
+
+		it('should clear current text', function() {
+			typingDisplay.set('abc');
+			expect(typingDisplay.getFullText()).toBeDefined();
+
+			typingDisplay.clear();
+			expect(typingDisplay.getFullText()).not.toBeDefined();
+		});
+	});
+
+	describe('#getNext', function() {
+
+		it('should return only first character of string', function() {
+			typingDisplay.set('abc');
+			var result = typingDisplay.getNext();
+
+			expect(result).toEqual('a');
+		});
+
+		it('should include second character of string', function() {
+			var result = typingDisplay.getNext();
+
+			expect(result).toEqual('ab');
+		});
+
+		it('should include third character of string', function() {
+			var result = typingDisplay.getNext();
+
+			expect(result).toEqual('abc');
+		});
+
+		it('should return false after entire string is displayed', function() {
+			var result = typingDisplay.getNext();
+
+			expect(result).toBe(false);
+		});
+	});
+});

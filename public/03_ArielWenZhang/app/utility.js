@@ -34,3 +34,37 @@ var textTracker = (function() {
 		next: next
 	};
 })();
+
+var typingDisplay = (function() {
+	var _text;
+	var _currentIndex;
+
+	function set(text) {
+		if(typeof text !== 'string') return false;
+
+		_text = text;
+		_currentIndex = 0;
+	}
+
+	function getFullText() {
+		return _text;
+	}
+
+	function clear() {
+		_text = undefined;
+	}
+
+	function getNext() {
+		_currentIndex++;
+		if(_currentIndex > _text.length) return false;
+
+		return _text.substring(0, _currentIndex);
+	}
+
+	return {
+		set: set,
+		getFullText: getFullText,
+		clear: clear,
+		getNext: getNext
+	};
+})();
