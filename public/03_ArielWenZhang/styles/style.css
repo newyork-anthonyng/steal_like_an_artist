@@ -22,7 +22,8 @@ nav li {
 	position: relative;
 }
 
-.blinking-cursor {
+#typing::after {
+	content: '|';
 	font-size: 2em;
 	position: relative;
 	top: 0.2em;
