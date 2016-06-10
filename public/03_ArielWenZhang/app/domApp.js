@@ -25,16 +25,27 @@ var domApp = (function(textTracker, typingDisplay) {
 		var missingParams = !(params['element'] && params['typingSpeed'] && params['pauseDelay']);
 		if(missingParams) return false;
 
-		intervalId = setInterval(function() {
+		intervalId = createNewInterval(params);
+	}
+
+	function createNewInterval(params) {
+		return setInterval(function() {
 			var text = next();
 
-			if(!text) {
-				setTimeout(function() {}, params['pauseDelay']);
+			if(text === false) {
+				createDelay(params);
 				return;
 			}
 
 			setElementText(params['element'], text);
 		}, params['typingSpeed']);
+	}
+
+	function createDelay(params) {
+		clearInterval(intervalId);
+		setTimeout(function() {
+			intervalId = createNewInterval(params);
+		}, params['pauseDelay']);
 	}
 
 	return {

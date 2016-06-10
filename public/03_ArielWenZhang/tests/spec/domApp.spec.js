@@ -150,22 +150,31 @@ describe('domApp', function() {
 				pauseDelay: 1000
 			});
 
-			jasmine.clock().tick(2000);
+			jasmine.clock().tick(500);
+			expect(ele.textContent).toEqual('a');
+			jasmine.clock().tick(500);
+			expect(ele.textContent).toEqual('ab');
+			jasmine.clock().tick(500);
+			expect(ele.textContent).toEqual('abc');
+			jasmine.clock().tick(500);
 			expect(ele.textContent).toEqual('abcd');
 
-			jasmine.clock().tick(999);
+			jasmine.clock().tick(1000);
 			expect(ele.textContent).toEqual('abcd');
 
-			jasmine.clock().tick(1);
+			jasmine.clock().tick(1000);
 			expect(ele.textContent).toEqual('e');
-
-			jasmine.clock().tick(1500);
+			jasmine.clock().tick(500);
+			expect(ele.textContent).toEqual('ef');
+			jasmine.clock().tick(500);
+			expect(ele.textContent).toEqual('efg');
+			jasmine.clock().tick(500);
 			expect(ele.textContent).toEqual('efgh');
 
-			jasmine.clock().tick(999);
+			jasmine.clock().tick(1000);
 			expect(ele.textContent).toEqual('efgh');
 
-			jasmine.clock().tick(1);
+			jasmine.clock().tick(1000);
 			expect(ele.textContent).toEqual('a');
 		});
 	});
