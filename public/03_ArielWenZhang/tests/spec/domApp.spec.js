@@ -178,4 +178,17 @@ describe('domApp', function() {
 			expect(ele.textContent).toEqual('a');
 		});
 	});
+
+
+	describe('#hoverOverImage', function() {
+
+		it('should return an object with x and y keys', function() {
+			var ele = document.createElement('div');
+			document.body.appendChild(ele);
+
+			var result = domApp.hoverOverImage(ele);
+			expect(result.x).toBeDefined();
+			expect(result.y).toBeDefined();
+		});
+	});
 });

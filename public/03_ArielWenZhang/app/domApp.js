@@ -48,10 +48,18 @@ var domApp = (function(textTracker, typingDisplay) {
 		}, params['pauseDelay']);
 	}
 
+	function hoverOverImage(ele) {
+		return {
+			x: 0,
+			y: 0
+		};
+	}
+
 	return {
 		init: init,
 		next: next,
 		setElementText: setElementText,
-		play: play
+		play: play,
+		hoverOverImage: hoverOverImage
 	};
 })(textTracker, typingDisplay);
