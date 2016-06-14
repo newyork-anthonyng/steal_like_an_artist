@@ -4,6 +4,7 @@ nav {
 	position: fixed;
 	width: 100%;
 	top: 0;
+	z-index: 10;
 }
 
 nav ul {
@@ -91,18 +92,24 @@ nav li {
 }
 
 #projects img {
-	position: absolute;
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
 	-ms-transition: all 0.3s;
 	-o-transition: all 0.3s;
 	transition: all 0.3s;
+	width: 100%;
 }
 
-#projects .container:hover img {
+#projects img:hover {
 	-webkit-transform: scale(1.1);
 	-moz-transform: scale(1.1);
 	-ms-transform: scale(1.1);
 	-o-transform: scale(1.1);
 	transform: scale(1.1);
+}
+
+.container {
+	height: 300px;
+	overflow: hidden;
+	width: 500px;
 }
