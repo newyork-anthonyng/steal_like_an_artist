@@ -179,16 +179,34 @@ describe('domApp', function() {
 		});
 	});
 
-
 	describe('#hoverOverImage', function() {
+		it('should return a string', function() {
+			var ele = $('<div>');
+			$('body').append(ele);
 
-		it('should return an object with x and y keys', function() {
-			var ele = document.createElement('div');
-			document.body.appendChild(ele);
+			var stubEvent = {
+				pageX: 100,
+				pageY: 100
+			};
 
-			var result = domApp.hoverOverImage(ele);
-			expect(result.x).toBeDefined();
-			expect(result.y).toBeDefined();
+			var result = domApp.hoverOverImage(stubEvent, ele);
+			expect(typeof result).toEqual('string');
+		});
+
+		it('should calculate transform-origin', function() {
+			var ele = $('<div>').css({
+				height: '100px',
+				width: '100px'
+			});
+			$('body').append(ele);
+
+			var stubEvent = {
+				pageX: 100,
+				pageY: 100
+			};
+
+			var result = domApp.hoverOverImage(stubEvent, ele);
+			expect(result).toEqual('92% 27%');
 		});
 	});
 });

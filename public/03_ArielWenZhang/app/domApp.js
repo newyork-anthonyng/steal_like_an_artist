@@ -48,11 +48,11 @@ var domApp = (function(textTracker, typingDisplay) {
 		}, params['pauseDelay']);
 	}
 
-	function hoverOverImage(ele) {
-		return {
-			x: 0,
-			y: 0
-		};
+	function hoverOverImage(myEvent, myElement) {
+		var xPercentage = ((myEvent.pageX - $(myElement).offset().left) / $(myElement).width()) * 100 + '%';
+		var yPercentage = ((myEvent.pageY - $(myElement).offset().top) / $(myElement).height()) * 100 + '%';
+
+	return xPercentage + ' ' + yPercentage;
 	}
 
 	return {
