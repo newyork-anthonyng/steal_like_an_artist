@@ -51,12 +51,17 @@
 		</div>
 	</section>
 
+	<section>
+		<img src="/03_ArielWenZhang/assets/image1.jpg" alt="Estee Lauder"></img>
+		<img src="/03_ArielWenZhang/assets/image2.jpg" alt="Gamut"></img>
+	</section>
+
 	<script src="/03_ArielWenZhang/app/utility.js" type="application/javascript"></script>
 	<script src="/03_ArielWenZhang/app/domApp.js" type="application/javascript"></script>
 	<script type="application/javascript">
 		domApp.init(['Hello World', 'I am Anthony', 'I Code Websites']);
 
-		var ele = document.getElementById('typing');
+		var ele = $('#typing')[0];
 		domApp.play({
 			element: ele,
 			typingSpeed: 100,
