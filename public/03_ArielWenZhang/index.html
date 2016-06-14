@@ -5,7 +5,7 @@
 	<title>Anthony Ng</title>
 	<link href="/03_ArielWenZhang/styles/reset.css" type="text/css" rel="stylesheet" />
 	<link href="/03_ArielWenZhang/styles/style.css" type="text/css" rel="stylesheet" />
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="/03_ArielWenZhang/app/jquery.min.js"></script>
 </head>
 
 <body>
@@ -72,6 +72,10 @@
 			pauseDelay: 1000
 		});
 
+		$('#projects img').mousemove(function(e) {
+			var transformOrigin = domApp.hoverOverImage(e, $(this));
+			$(this).css('transform-origin', transformOrigin);
+		});
 	</script>
 </body>
 </html>
