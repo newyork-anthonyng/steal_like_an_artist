@@ -1,26 +1,57 @@
+body {
+	font-family: Arial, sans-serif;
+	min-width: 350px;
+}
+
+/**********
+Navigation
+**********/
 nav {
 	background-color: white;
 	left: 0;
+	padding-top: 1em;
 	position: fixed;
 	width: 100%;
 	top: 0;
 	z-index: 10;
 }
 
+nav img {
+	margin-left: 0.5em;
+}
+
 nav ul {
 	float: right;
 	list-style: none;
+	margin-top: 1em;
 }
 
 nav li {
 	float: left;
+	margin-left: 0.5em;
+	margin-right: 0.5em;
 	text-transform: uppercase;
 }
 
 #home {
 	height: 25em;
-	margin-top: 4em;
+	margin-top: 6em;
 	position: relative;
+}
+
+/**********
+Home
+**********/
+#home h1 {
+	font-size: 1.8em;
+	line-height: 1.8em;
+	text-align: center;
+}
+
+#typing {
+	font-size: 1.8em;
+	font-weight: bolder;
+	text-align: center;
 }
 
 #typing::after {
@@ -89,8 +120,36 @@ nav li {
 	bottom: 0;
 	position: absolute;
 	right: 0;
+	width: 40%;
 }
 
+/**********
+About Me
+**********/
+#about-me {
+	background-color: #181a1b;
+	color: white;
+	padding: 1em 1em 4em 1em;
+}
+
+#about-me h2 {
+	font-size: 1.4em;
+	text-align: center;
+}
+
+#about-me p {
+	font-size: 1.2em;
+	line-height: 1.6em;
+}
+
+#about-me h3 {
+	font-size: 1.2em;
+	margin-top: 1em;
+}
+
+/**********
+Projects
+**********/
 #projects img {
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
