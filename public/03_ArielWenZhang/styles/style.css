@@ -9,6 +9,8 @@ Navigation
 nav {
 	background-color: white;
 	left: 0;
+	min-width: 350px;
+	padding-bottom: 1em;
 	padding-top: 1em;
 	position: fixed;
 	width: 100%;
@@ -27,21 +29,23 @@ nav ul {
 }
 
 nav li {
+	cursor: pointer;
 	float: left;
+	font-weight: bolder;
 	margin-left: 0.5em;
 	margin-right: 0.5em;
 	text-transform: uppercase;
 }
 
+/**********
+Home
+**********/
 #home {
-	height: 25em;
+	height: 30em;
 	margin-top: 6em;
 	position: relative;
 }
 
-/**********
-Home
-**********/
 #home h1 {
 	font-size: 1.8em;
 	line-height: 1.8em;
@@ -132,19 +136,31 @@ About Me
 	padding: 1em 1em 4em 1em;
 }
 
+#about-me img {
+	display: block;
+	margin: 2em auto 1em auto;
+}
+
 #about-me h2 {
 	font-size: 1.4em;
+	margin-bottom: 1em;
 	text-align: center;
 }
 
 #about-me p {
-	font-size: 1.2em;
 	line-height: 1.6em;
 }
 
-#about-me h3 {
+#skills h3 {
+	display: inline-block;
 	font-size: 1.2em;
-	margin-top: 1em;
+	margin-bottom: 1em;
+	margin-top: 2em;
+}
+
+#skills img {
+	display: inline-block;
+	margin: 0;
 }
 
 /**********
@@ -171,4 +187,31 @@ Projects
 	height: 300px;
 	overflow: hidden;
 	width: 500px;
+}
+
+@media(min-width: 600px) {
+	/**********
+	Navigation
+	**********/
+
+	/**********
+	Home
+	**********/
+	#home h1,
+	#typing {
+		text-align: left;
+	}
+
+	#logo-animation {
+		right: 0.5em;
+		width: 10em;
+	}
+
+	/**********
+	About Me
+	**********/
+
+	/**********
+	Projects
+	**********/
 }
