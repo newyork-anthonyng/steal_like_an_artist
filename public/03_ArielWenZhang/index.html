@@ -57,10 +57,10 @@
 
 	<section id="projects">
 		<div class="container">
-			<img src="/03_ArielWenZhang/assets/image1.jpg" alt="Estee Lauder"></img>
+			<div class="photo" style="background-image: url('/03_ArielWenZhang/assets/image1.jpg')"></div>
 		</div>
 		<div class="container">
-			<img src="/03_ArielWenZhang/assets/image2.jpg" alt="Gamut"></img>
+			<div class="photo" style="background-image: url('/03_ArielWenZhang/assets/image2.jpg')"></div>
 		</div>
 	</section>
 
@@ -76,7 +76,7 @@
 			pauseDelay: 1000
 		});
 
-		$('#projects img').mousemove(function(e) {
+		$('.photo').mousemove(function(e) {
 			var transformOrigin = domApp.hoverOverImage(e, $(this));
 			$(this).css('transform-origin', transformOrigin);
 		});

@@ -166,7 +166,15 @@ About Me
 /**********
 Projects
 **********/
-#projects img {
+.container {
+	height: 25em;
+	overflow: hidden;
+}
+
+.photo {
+	background-size: cover;
+	height: 100%;
+	width: 100%;
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
 	-ms-transition: all 0.3s;
@@ -175,18 +183,12 @@ Projects
 	width: 100%;
 }
 
-#projects img:hover {
+.photo:hover {
 	-webkit-transform: scale(1.1);
 	-moz-transform: scale(1.1);
 	-ms-transform: scale(1.1);
 	-o-transform: scale(1.1);
 	transform: scale(1.1);
-}
-
-.container {
-	height: 300px;
-	overflow: hidden;
-	width: 500px;
 }
 
 @media(min-width: 600px) {
