@@ -43,7 +43,7 @@ nav li {
 Home
 **********/
 #home {
-	height: 30em;
+	height: 22em;
 	margin-top: 6em;
 	position: relative;
 }
@@ -126,7 +126,7 @@ Home
 	bottom: 0;
 	position: absolute;
 	right: 0;
-	width: 40%;
+	width: 20%;
 }
 
 /**********
@@ -135,7 +135,7 @@ About Me
 #about-me {
 	background-color: #181a1b;
 	color: white;
-	padding: 1em 1em 4em 1em;
+	padding: 5em 1em 4em 1em;
 }
 
 #about-me h2 {
@@ -150,7 +150,7 @@ About Me
 
 #about-me > img {
 	display: block;
-	margin: 0 auto;
+	margin: 0 auto 1em auto;
 }
 
 #skills h3 {
@@ -197,10 +197,21 @@ Projects
 	/**********
 	Navigation
 	**********/
+	nav img {
+		margin-left: 1em;
+	}
+
+	nav li:last-child {
+		margin-right: 1em;
+	}
 
 	/**********
 	Home
 	**********/
+	#home {
+		padding-left: 1em;
+	}
+
 	#home h1,
 	#typing {
 		text-align: left;
@@ -210,30 +221,10 @@ Projects
 		right: 0.5em;
 		width: 10em;
 	}
-
-	/**********
-	About Me
-	**********/
-
-	/**********
-	Projects
-	**********/
 }
 
 @media(min-width: 900px) {
-	/**********
-	Navigation
-	**********/
-
-	/**********
-	Home
-	**********/
-
-	/**********
-	About Me
-	**********/
 	#about-me {
-		/*height: 70%;*/
 		overflow: hidden;
 		padding: 0;
 		position: relative;
@@ -246,16 +237,15 @@ Projects
 	#about-me > img {
 		left: 50%;
 		position: absolute;
-		top: 2em;
+		top: 4em;
 		-webkit-transform: translateX(-50%);
 		transform: translateX(-50%);
 	}
 
 	#summary,
 	#skills {
-		/*height: 100%;*/
-		height: 1100px;
-		padding: 6em 3% 3% 3%;
+		height: 300px;
+		padding: 10em 3% 3% 3%;
 		width: 44%;
 	}
 
@@ -279,4 +269,11 @@ Projects
 	/**********
 	Projects
 	**********/
+	#projects .container {
+		width: 50%;
+	}
+
+	#projects .container:nth-child(even) {
+		float: right;
+	}
 }
