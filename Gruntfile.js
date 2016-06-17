@@ -3,8 +3,8 @@ module.exports = function(grunt) {
 		cssmin: {
 			build: {
 				files: {
-					'public/02_GarberCo/style.min.css': 'public/02_GarberCo/style.css',
-					'public/02_GarberCo/reset.min.css': 'public/02_GarberCo/reset.css',
+					'public/03_ArielWenZhang/styles/style.min.css': 'public/03_ArielWenZhang/styles/style.css',
+					'public/03_ArielWenZhang/styles/reset.min.css': 'public/03_ArielWenZhang/styles/reset.css',
 				}
 			}
 		}
