@@ -1,6 +1,8 @@
+html,
 body {
 	font-family: Arial, sans-serif;
 	min-width: 350px;
+	height: 100%;
 }
 
 /**********
@@ -136,11 +138,6 @@ About Me
 	padding: 1em 1em 4em 1em;
 }
 
-#about-me img {
-	display: block;
-	margin: 2em auto 1em auto;
-}
-
 #about-me h2 {
 	font-size: 1.4em;
 	margin-bottom: 1em;
@@ -151,6 +148,11 @@ About Me
 	line-height: 1.6em;
 }
 
+#about-me > img {
+	display: block;
+	margin: 0 auto;
+}
+
 #skills h3 {
 	display: inline-block;
 	font-size: 1.2em;
@@ -159,8 +161,8 @@ About Me
 }
 
 #skills img {
-	display: inline-block;
-	margin: 0;
+	position: relative;
+	top: 0.5em;
 }
 
 /**********
@@ -212,6 +214,67 @@ Projects
 	/**********
 	About Me
 	**********/
+
+	/**********
+	Projects
+	**********/
+}
+
+@media(min-width: 900px) {
+	/**********
+	Navigation
+	**********/
+
+	/**********
+	Home
+	**********/
+
+	/**********
+	About Me
+	**********/
+	#about-me {
+		/*height: 70%;*/
+		overflow: hidden;
+		padding: 0;
+		position: relative;
+	}
+
+	#about-me h2 {
+		text-align: left;
+	}
+
+	#about-me > img {
+		left: 50%;
+		position: absolute;
+		top: 2em;
+		-webkit-transform: translateX(-50%);
+		transform: translateX(-50%);
+	}
+
+	#summary,
+	#skills {
+		/*height: 100%;*/
+		height: 1100px;
+		padding: 6em 3% 3% 3%;
+		width: 44%;
+	}
+
+	#summary {
+		background-color: white;
+		color: black;
+		float: left;
+	}
+
+	#summary img {
+		left: 50%;
+		position: absolute;
+		-webkit-transform: translateX(-50%);
+		transform: translateX(-50%);
+	}
+
+	#skills {
+		float: right;
+	}
 
 	/**********
 	Projects
