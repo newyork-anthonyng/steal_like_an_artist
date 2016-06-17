@@ -7,8 +7,19 @@ module.exports = function(grunt) {
 					'public/03_ArielWenZhang/styles/reset.min.css': 'public/03_ArielWenZhang/styles/reset.css',
 				}
 			}
+		},
+		uglify: {
+			options: {
+				mangle: false
+			},
+			my_target: {
+				files: {
+					'public/03_ArielWenZhang/app/app.min.js': ['public/03_ArielWenZhang/app/utility.js', 'public/03_ArielWenZhang/app/domApp.js'],
+				}
+			}
 		}
 	});
 
 	grunt.loadNpmTasks('grunt-contrib-cssmin');
+	grunt.loadNpmTasks('grunt-contrib-uglify');
 };
