@@ -1,0 +1,34 @@
+03. Ariel Wen Zhang
+
+Lessons Learned
+	1. Test Driven Development
+	I used Test Driven Development (TDD) when developing the API's that took care of the typing animation inside the web page. It has a lot of different definitions to different people.
+	TDD is a way of programming where you write tests for your code first, then write the minimum amount of code that will make the tests pass, and then refactor. I'm a big fan of this and it really keeps your code focused. You're only coding what you want, and you have the confidence that your code works.
+	Most people think of TDD as writing tests, but this is only a side effect of TDD; tests aren't the main purpose of TDD. I think the main purpose of TDD (for me at this point) is making you think about different aspects of your code, and making it modular. 
+	I worked on two different API's. One called "domApp" that handled the text seemingly getting typed one letter at a time. The other API let me cycle through an array of words and have each one display after another on the screen. I created these with TDD in mind, thinking about how the API's would work and interact with each other.
+	This was all done in a vacuum; I didn't have a browser open. I wasn't constantly refreshing the page to see if it worked or not on the DOM as intended. But when I was done creating the API's, I threw the API's together and it worked perfectly right out of the box. This is what TDD is! It helps you code less by thinking more.
+	For the actual testing, I used Jasmine.
+
+	2. Grunt Uglify
+	Similar to how I used Grunt to minify my CSS files in my last project, I also used it to minify my two javascript files. It also allowed me to combine two files into one. This way, I save the browser from having to make an extra request to get a file and should make the website load faster (in theory). 
+	When minifying files, most tools replace your human-readable variable names with something uglier (like the name implies). This might be an issue if you're relying on using a variable name; for instance, my code was calling a function that was named domApp. By minifying it, I would lose that descriptive variable name, and be forced to use "a" or "b" as a variable name. Luckily, uglify has a ton of options, including "mangle." This tells grunt not to change your variable and function names. Awesome.
+
+Improvements
+	1. Webpack
+	In my attempts to minify my javascript files, I had combined them into one file. However, the ordering of my files did make a difference. I didn't know this until my browser was complaining that certain variables didn't exist.
+	I think using Webpack would help me with this in the future. I was only working with two files for this project, but I can only imagine what a pain it would be with more. From the brief tutorial I had on Webpack (shout out to Syed), let's you explicitly define the dependencies that your code has to other files. So instead of the order of your script tags inside your HTML page showing your dependencies, all of your files are treated as independent modules that you import as needed.
+
+Example:
+<script src="lebron.js"></script>
+<script src="threes.js"></script>
+<script src="curry.js"></script>
+	You might see the above script tags inside of an HTML page. This might express some dependencies to you. If the curry.js depended on something inside the threes.js file, then rearranging these script tags would break your page. But lebron.js is on top of both of these files. Does this mean that lebron.js doesn't depend on three.js? Would moving it break anything? You'd have to open up the code and really read into it to look at the dependencies. I think using webpack would solve all of these problems.
+
+	2. Assets
+	The gif on Ariel's website (of the robot waving its arm) is adorable. It's simple, and adds a certain charm to the website. In the future, I would definitely want to level up my art skills and create my own art assets.
+
+	3. Fonts
+	This is really the first project here that required working with a good amount of text. I concentrated most on working on the layout of the website. The font sizes, padding, line-height were all after thoughts (or not even fully formed thoughts at all, since I just wanted to get it finished and ship it). I want to spend more time on typography and learn the do's and don'ts of the web. Ariel's website had a lighter font type on her About page that complemented the black background. However on my page, the font type seemed heavy, and overlayed with the dark background, it just made my eyes hurt.
+
+Inspiration
+	www.arielwenzhang.com
