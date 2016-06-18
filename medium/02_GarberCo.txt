@@ -2,18 +2,19 @@
 
 Lessons Learned
 	1. Vanilla JavaScript
-		I learned to embrace vanilla JavaScript. I want to get away with avoiding jQuery as much as possible. It doesn't make sense to add all this weight of jQuery just to use a couple of convenient selectors. Especially when there's a lot of pretty great built in Web APIs.
+		I learned to embrace vanilla JavaScript. I want avoid jQuery as much as possible. It doesn't make sense to add all this weight of jQuery just to use a couple of convenient selectors; especially when there's a lot of pretty great built-in Web APIs (like ClassName/ClassList that I mention later).
 
 	2. Grunt
-		I used Grunt with cssmin to minify my CSS files. Smaller files means faster client download!
+		I used Grunt with cssmin to minify my CSS files. Minifying my CSS files removes white space from the file (among other things, I'm sure) to reduce the file size. Smaller files means faster client download!
 
 	3. ClassName vs. ClassList
-		I have seen a lot of custom JavaScript functions to add a class to an element. And I had used this before, having only heard of element.className API.
-	className returns a space separated string of all the element's classes. You can also set the className with a string, but you will override any existing classes.
-	While browsing through the API, I discovered ClassList. This returns to you an object with properties that let you add a class, remove a class, toggle a class, and check if the element contains the class. What more can you ask for??
+		I have seen a lot of custom JavaScript functions to add a class to an element. I had used these Stack Overflow snippets which used the element.className API.
+	className returns a space-separated string of all the element's classes. You can also set the className with a string, but you will override any existing classes.
+	While browsing through MDN for Web APIs (which I sadly love doing), I discovered "classList". This returns an array-like object with properties that let you add a class, remove a class, toggle a class, and check if the element contains the class. What more can you ask for?
 
 Improvements
-	I would want to have used translate3d to move between the "About" and "Home" page, instead of using just the position: X CSS property.
+	After I finished this project, I read in the cssmin documentation that you can combine multiple CSS files into one output file when minifying. I will definitely keep this in mind for the future; less files means less requests from the browser. I've been obsessing over page speed recently after reading "Designing for Performance" by Lara Hogan. It's a good read that showed me how the performance and speed of a website shouldn't be an afterthought of your website, but one of the core components of your website's user experience. Would a user's experience be better if they had to wait 10 seconds for a webpage to load on their phone (god forbid) compared to 2 seconds? I think the page speed would make a bigger difference than an <img> tag that I spent minutes on trying to center on the webpage, so I should at least spend that much time thinking about page performance.
+	https://gtmetrix.com is a great website that grades your webpage and gives suggestions on how you can improve the speed of your site.
 
 Inspiration
 	www.garberco.com
