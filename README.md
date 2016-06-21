@@ -7,7 +7,8 @@ Steal Like An Artist
 ### Wireframes
 0. Steal Like an Artist - Home page
 
-![Mobile and Public](./public/assets/Wireframe.jpg)
+![Mobile](./public/assets/01_Mobile.jpg)
+![Desktop](./public/assets/02_Desktop.jpg)
 
 1. Communicate Using Space
 
