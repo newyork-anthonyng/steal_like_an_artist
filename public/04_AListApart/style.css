@@ -1,6 +1,16 @@
 h1 {
 	background-image: url(/04_AListApart/assets/header.svg);
 	background-repeat: no-repeat;
-	background-size: contain;
+	background-size: cover;
+	height: 100px;
+	margin-top: -21px;
+	text-indent: -99999px;
+}
+
+footer p {
+	background-image: url(/04_AListApart/assets/footer.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-size: 37px;
 	text-indent: -99999px;
 }
