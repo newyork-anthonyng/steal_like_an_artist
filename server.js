@@ -22,6 +22,10 @@ app.get('/3', (req, res) => {
 	res.sendFile(path.join(__dirname + '/public/03_ArielWenZhang/index.html'));
 });
 
+app.get('/4', (req, res) => {
+	res.sendFile(path.join(__dirname + '/public/04_AListApart/index.html'));
+});
+
 const server = app.listen(process.env.PORT || 3000, () => {
 	console.log('Server running on ' + server.address().port);
 });
