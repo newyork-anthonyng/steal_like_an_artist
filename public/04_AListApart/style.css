@@ -16,6 +16,57 @@ nav {
 	width: 100%;
 }
 
+.hamburger {
+	display: block;
+	position: relative;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	width: 37px;
+	height: 37px;
+	font-size: 0;
+	text-indent: -9999px;
+	appearance: none;
+	box-shadow: none;
+	border-radius: none;
+	border: none;
+	cursor: pointer;
+	background-color: transparent;
+}
+
+.hamburger:focus {
+	outline: none;
+}
+
+.hamburger span {
+	display: block;
+	position: absolute;
+	top: 16px;
+	left: 8px;
+	right: 8px;
+	height: 4px;
+	background-color: black;
+}
+
+.hamburger span::before,
+.hamburger span::after {
+	position: absolute;
+	display: block;
+	left: 0;
+	width: 100%;
+	height: 4px;
+	background-color: black;
+	content: '';
+}
+
+.hamburger span::before {
+	top: -6px;
+}
+
+.hamburger span::after {
+	bottom: -6px;
+}
+
 nav ul {
 	list-style-type: none;
 }
