@@ -7,6 +7,33 @@ h1 {
 	text-indent: -99999px;
 }
 
+nav {
+	background-color: rgba(255, 255, 255, 0.9);
+	border-bottom: 1px solid gray;
+	height: 37px;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+nav ul {
+	list-style-type: none;
+}
+
+nav li {
+	float: left;
+	margin-right: 21px;
+}
+
+nav a {
+	color: black;
+	font-family: Arial, sans-serif;
+	font-weight: bolder;
+	line-height: 37px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
 footer p {
 	background-image: url(/04_AListApart/assets/footer.svg);
 	background-repeat: no-repeat;
