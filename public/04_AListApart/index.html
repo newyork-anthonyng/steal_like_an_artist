@@ -47,5 +47,19 @@
 	<footer>
 		<p>*For people who make websites.</p>
 	</footer>
+
+	<script type="application/javascript">
+		window.onload = function() {
+			setUpHamburger();
+		};
+
+		function setUpHamburger() {
+			var hamburger = document.getElementsByClassName('hamburger')[0];
+
+			hamburger.addEventListener('click', function() {
+				this.classList.toggle('active');
+			});
+		}
+	</script>
 </body>
 </html>
