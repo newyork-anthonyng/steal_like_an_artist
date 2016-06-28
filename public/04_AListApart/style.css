@@ -46,13 +46,12 @@ nav {
 	right: 8px;
 	height: 4px;
 	background-color: black;
-	transition-duration: 0.3s, 0.3s;
-	transition-property: transform, background-color;
+	transition-duration: 0.3s;
+	transition-property: transform;
 }
 
 .hamburger.active span {
 	transform: rotate(90deg);
-	background-color: rgb(115, 115, 115);
 }
 
 .hamburger span::before,
@@ -64,8 +63,6 @@ nav {
 	height: 4px;
 	background-color: black;
 	content: '';
-	transition-duration: 0.3s;
-	transition-property: background-color;
 }
 
 .hamburger span::before {
@@ -76,17 +73,19 @@ nav {
 	bottom: -6px;
 }
 
-.hamburger.active span::after {
-	background-color: rgb(200, 200, 200);
-}
-
 nav ul {
+	background-color: rgba(255, 255, 255, 0.9);
+	display: none;
 	list-style-type: none;
 }
 
+nav.active ul {
+	display: block;
+}
+
 nav li {
-	float: left;
-	margin-right: 21px;
+	border-bottom: 1px solid #eee;
+	padding-left: 8px;
 }
 
 nav a {
@@ -98,6 +97,10 @@ nav a {
 	text-transform: uppercase;
 }
 
+nav a:hover {
+	text-decoration: underline;
+}
+
 footer p {
 	background-image: url(/04_AListApart/assets/footer.svg);
 	background-repeat: no-repeat;
@@ -105,3 +108,11 @@ footer p {
 	font-size: 37px;
 	text-indent: -99999px;
 }
+
+@media(min-width: 900px) {
+	nav li {
+		float: left;
+		margin-right: 21px;
+	}
+}
+

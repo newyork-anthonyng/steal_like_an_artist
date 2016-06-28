@@ -55,9 +55,11 @@
 
 		function setUpHamburger() {
 			var hamburger = document.getElementsByClassName('hamburger')[0];
+			var nav = document.getElementsByTagName('nav')[0];
 
 			hamburger.addEventListener('click', function() {
 				this.classList.toggle('active');
+				nav.classList.toggle('active');
 			});
 		}
 	</script>
