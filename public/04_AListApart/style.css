@@ -1,10 +1,6 @@
-h1 {
-	background-image: url(/04_AListApart/assets/header.svg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	height: 100px;
-	margin-top: -21px;
-	text-indent: -99999px;
+body {
+	font-family: Arial, sans-serif;
+	padding: 0 0.77rem 0 0.77rem;
 }
 
 nav {
@@ -99,6 +95,76 @@ nav a {
 
 nav a:hover {
 	text-decoration: underline;
+}
+
+h1 {
+	background-image: url(/04_AListApart/assets/header.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100px;
+	margin-top: -21px;
+	text-indent: -99999px;
+}
+
+h2, h3 {
+	text-align: center;
+}
+
+h2 {
+	font-size: 2.2rem;
+}
+
+h3 {
+	font-size: 1.7rem;
+	margin: 1.3rem 0 1.7rem 0;
+}
+
+h4 {
+	font-size: 1.3rem;
+	margin-bottom: 0.46rem;
+}
+
+main {
+	text-align: center;
+}
+
+main #time {
+	font-size: 1.3rem;
+	margin: 1.7rem 0 1.7rem 0;
+}
+
+main span.new {
+	background-color: #bb3825;
+	border-radius: 5%;
+	color: white;
+	padding: 2px;
+}
+
+main p:nth-of-type(1) {
+	margin: 0.6rem 0 0 0;
+}
+
+main p:nth-of-type(2) {
+	font-size: 1.3rem;
+	line-height: 2rem;
+	margin: 1rem 0 1.3rem 0;
+	text-align: justify;
+}
+
+.author {
+	color: #2455c3;
+}
+
+.article {
+	margin-bottom: 2.2rem;
+}
+
+.article  p {
+	line-height: 1.7rem;
+}
+
+.article p:nth-of-type(3) {
+	color: #666;
 }
 
 footer p {
