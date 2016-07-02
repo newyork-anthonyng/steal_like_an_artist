@@ -1,6 +1,11 @@
-body {
-	font-family: Arial, sans-serif;
-	padding: 0 0.77rem 0 0.77rem;
+header h1 {
+	background-image: url(/04_AListApart/assets/header.svg);
+	background-position: left bottom;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 150px;
+	margin-top: -50px;
+	text-indent: -99999px;
 }
 
 nav {
@@ -10,6 +15,35 @@ nav {
 	position: absolute;
 	top: 0;
 	width: 100%;
+}
+
+nav ul {
+	background-color: rgba(255, 255, 255, 0.9);
+	display: none;
+	list-style-type: none;
+}
+
+nav.active ul {
+	display: block;
+}
+
+nav li {
+	border-bottom: 1px solid #eee;
+	padding-left: 8px;
+}
+
+nav a {
+	color: black;
+	font-family: Arial, sans-serif;
+	font-weight: bolder;
+	line-height: 37px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+nav a:hover {
+	color: black;
+	text-decoration: underline;
 }
 
 .hamburger {
@@ -37,7 +71,7 @@ nav {
 .hamburger span {
 	display: block;
 	position: absolute;
-	top: 16px;
+	top: 20px;
 	left: 8px;
 	right: 8px;
 	height: 4px;
@@ -67,43 +101,6 @@ nav {
 
 .hamburger span::after {
 	bottom: -6px;
-}
-
-nav ul {
-	background-color: rgba(255, 255, 255, 0.9);
-	display: none;
-	list-style-type: none;
-}
-
-nav.active ul {
-	display: block;
-}
-
-nav li {
-	border-bottom: 1px solid #eee;
-	padding-left: 8px;
-}
-
-nav a {
-	color: black;
-	font-family: Arial, sans-serif;
-	font-weight: bolder;
-	line-height: 37px;
-	text-decoration: none;
-	text-transform: uppercase;
-}
-
-nav a:hover {
-	text-decoration: underline;
-}
-
-h1 {
-	background-image: url(/04_AListApart/assets/header.svg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	height: 100px;
-	margin-top: -21px;
-	text-indent: -99999px;
 }
 
 h2, h3 {
@@ -189,5 +186,8 @@ footer p {
 		float: left;
 		margin-right: 21px;
 	}
-}
 
+	nav a {
+		line-height: 43px;
+	}
+}
