@@ -3,8 +3,9 @@ module.exports = function(grunt) {
 		cssmin: {
 			build: {
 				files: {
-					'public/03_ArielWenZhang/styles/style.min.css': 'public/03_ArielWenZhang/styles/style.css',
-					'public/03_ArielWenZhang/styles/reset.min.css': 'public/03_ArielWenZhang/styles/reset.css',
+					'public/04_AListApart/normalize.min.css': 'public/04_AListApart/normalize.css',
+					'public/04_AListApart/skeleton.min.css': 'public/04_AListApart/skeleton.css',
+					'public/04_AListApart/style.min.css': 'public/04_AListApart/style.css',
 				}
 			}
 		},
