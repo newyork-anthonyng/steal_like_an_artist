@@ -1,8 +1,18 @@
 04. A List Apart
 
 Lessons Learned
+1. David Kadavy
+I signed up for David Kadavy's email newsletter, (http://designforhackers.com/blog/design-pitfalls-a-new-free-email-course-to-learn-design/)
+I have only been through 3 of the 6 free lessons here, but his newsletters are aimed towards avoiding the common design pitfalls (as its name suggests). It teaches you this by limiting your choices. As a designer with a blank slate, you have infinite options. You can choose from so many different fonts, so many different font-sizes, so many different colors, etc. All of these choices can be overwhelming for a newbie, and crappy designs can result. A soup of a website might be created by mixing in as many colors, different font-sizes and fonts available.
+Having a constraint on your choices also encourages creativity. Although it might sound counter-intuitive, by limiting what you can use in your designer palette, you come up with even more creative solutions. If you can only use 1 font family, how can you differentiate a header from a paragraph? If you can only use 2 different colors, how can you make a vibrant website?
+
+2. Skeleton.css (http://getskeleton.com)
+I used Skeleton.css, which is advertised as "dead simple, responsive boilerplate." It is only 400 lines of CSS, and gives you the basics of a 12 column responsive grid. Designing and developing while thinking in terms of columns definitely helps me with some of the layout of my code. Instead of thinking how many pixels I should add to two different columns of my code, I think about which columns the content should take up.
+
+Thinking in terms of the grid might also limit some of your creativity. But like David Kadavy's newsletter suggested, having some limits will make you even more creative. And using a grid doesn't mean that you have to adhere to it strictly; these are just guidelines that can be broken.
 
 Improvements
+Although skeleton.css is very lightweight, it does come with some stylings of its own. It has its own styling for buttons and forms. I think they look amazing, but these styles go unused. I wonder if it's better to get keep a version of skeleton that is bare of all these unnecessary styles.
 
 Inspiration
 www.alistapart.com
