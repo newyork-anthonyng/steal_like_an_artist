@@ -2,35 +2,23 @@
 
 Lessons Learned
 1. Spritesheets
--advantages
-  -you combine multiple images into one large image
-	-you might not save space
-	-you make less requests which will save time
-	-the down arrow
-	-the menu hamburger item
-	-the grid
--css styles
-	-background-image
-	-background-position
-	-background-repeat
+On this project, I used spritesheets to hold some of my smaller assets (an arrow, a hamburger button, a four square grid). Instead of holding 3 separate .jpg files for each of the assets, you can combine them into one large image, called a spritesheet. Combining these images can actually make the total size of the files larger (you may end up with the spritesheet being 4 kb's, when the three separate images could have totaled 3 kb's). But the saving you get is fewer requests being made to retrieve files. Instead of your website making 3 separate requests for each of the images, it makes one request.
+
+To use spritesheets, you'll be working mainly with 2 CSS properties: background-image and background-position.
+"background-image" will be the source of your spritesheet.
+"background-position" will be where the specific image you are looking for is located in your spritesheet. If the sprite you're looking for is 10px from the top, and 15px from the left, then "background-position: 10px 15px". You can also use percentages and other values.
+Then you will set the height and the width to equal the size of the sprite on the spritesheet. Make sure to set it exactly; if you set the width or height larger than the actual sprite you are looking for, you will actually grab parts of the other sprite.
+
+I believe spritesheets are definitely great to save website loading time, but they can be a pain to work with. When you have to make any changes to your sprites, you'll have to update the background-position values of all your sprites if they moved. For simpler images, it may be better to just use html entities. There's a hamburger button there (&equiv;), an arrow (&xvee;) and something that resembles the grid (&plusb;). And the great thing about these is it's treated as text characters, so CSS properties such as "font-size" and "color" work on it. To use these entities, just type them in as if it were regular text content you were typing "Hello World &equiv;".
+https://dev.w3.org/html5/html-author/charref
 
 2. Box shadow generator
--confusing CSS properties out there
-  -take a lot of arguments
--chrome dev tools are effective, but sometimes it's not the most efficient
--websites that generate the properties for you
-  -http://www.cssmatic.com/box-shadow
-	-you can play with values and have it update in real time
-	-the UI to update the values is a lot friendlier than chrome dev tools
--there are other websites to generate other elements, like buttons
+There are a lot of confusing CSS properties out there that take in so many arguments. Box shadows are a good example of that. Chrome Dev tools does a great job of letting you play with CSS properties and watch them update in real time, but sometimes it's not the most efficient when you're dealing with multiple arguments.
+But fear not, there are some great websites that will generate the CSS properties for you. For the box shadow I used on this project, I used http://www.cssmatic.com/box-shadow. It gives you sliders that you can change, and you can see the updates in real time. This UI is definitely a lot friendlier than what the Chrome Dev tools gives you. There are also other websites that generate properties for other elements, like buttons.
 
 Improvements
--Incomplete project.
--I do plan on playing around with SVG's in the future, and populating this pseudo-Dribbble page with some of my creations.
--used the Sketch Measure plugin
-  -should have been more detailed
-	-found myself missing a lot of padding/margin/color values that I didn't think to include in the styleguide
-  - I definitely see great value in this Styleguide. If I had to do it over again
+This was an incomplete project. I didn't have enough time to make it responsive, but I wanted to just play around with the spritesheets. I plan on playing around with SVG's in the future, and populate this pseudo-Dribbble page with my creations.
+I used the Sketch Measure plugin and it was amazing. But this was my first time using it, and I found that I didn't include enough details. I had to reopen the Sketch file multiple times to look for missing padding/margin/color values that I didn't think to include in the styleguides.
 
 Inspiration
 www.dribbble.com
