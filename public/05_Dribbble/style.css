@@ -1,3 +1,12 @@
+html, body {
+	height: 100%;
+}
+
+.container {
+	background-color: #f4f4f4;
+	height: 100%;
+}
+
 header {
 	background-color: #333;
 	padding: 1.5rem 0 1.5rem 0;
@@ -6,6 +15,7 @@ header {
 
 #intro {
 	background-color: #444444;
+	padding: 2.1rem 0;
 }
 
 h2 {
@@ -49,6 +59,7 @@ nav li {
 	display: inline-block;
 	height: 3.5rem;
 	line-height: 3.5rem;
+	padding: 0 1rem;
 	text-decoration: none;
 }
 
@@ -61,13 +72,18 @@ a[href="#join"] {
 }
 
 #filter {
+	background-color: white;
 	position: relative;
+	-webkit-box-shadow: 0px 2px 5px 0px rgba(117,117,117,1);
+	-moz-box-shadow: 0px 2px 5px 0px rgba(117,117,117,1);
+	box-shadow: 0px 2px 5px 0px rgba(117,117,117,1);
 }
 
 #filter a {
 	background-image: url('/05_Dribbble/assets/spritesheet.png');
 	background-repeat: no-repeat;
 	background-position: 150% -1.7rem;
+	color: black;
 	padding-right: 25px;
 	text-decoration: none;
 }
@@ -79,6 +95,7 @@ a[href="#join"] {
 
 #filter li {
 	display: inline-block;
+	margin: 1rem 0;
 }
 
 #filter a[alt="Action Grid"] {
@@ -87,8 +104,9 @@ a[href="#join"] {
 	background-position: 0 -0.2rem;
 	display: inline-block;
 	height: 1.6rem;
+	padding: 0;
 	position: absolute;
-	right: 0;
-	top: 0;
+	right: 1rem;
+	top: 1rem;
 	width: 1.6rem;
 }
