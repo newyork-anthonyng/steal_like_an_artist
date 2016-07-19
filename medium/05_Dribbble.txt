@@ -1,0 +1,36 @@
+05. Dribbble
+
+Lessons Learned
+1. Spritesheets
+-advantages
+  -you combine multiple images into one large image
+	-you might not save space
+	-you make less requests which will save time
+	-the down arrow
+	-the menu hamburger item
+	-the grid
+-css styles
+	-background-image
+	-background-position
+	-background-repeat
+
+2. Box shadow generator
+-confusing CSS properties out there
+  -take a lot of arguments
+-chrome dev tools are effective, but sometimes it's not the most efficient
+-websites that generate the properties for you
+  -http://www.cssmatic.com/box-shadow
+	-you can play with values and have it update in real time
+	-the UI to update the values is a lot friendlier than chrome dev tools
+-there are other websites to generate other elements, like buttons
+
+Improvements
+-Incomplete project.
+-I do plan on playing around with SVG's in the future, and populating this pseudo-Dribbble page with some of my creations.
+-used the Sketch Measure plugin
+  -should have been more detailed
+	-found myself missing a lot of padding/margin/color values that I didn't think to include in the styleguide
+  - I definitely see great value in this Styleguide. If I had to do it over again
+
+Inspiration
+www.dribbble.com
