@@ -30,6 +30,10 @@ app.get('/5', (req, res) => {
 	res.sendFile(path.join(__dirname + '/public/05_Dribbble/index.html'));
 });
 
+app.get('/6', (req, res) => {
+	res.sendFile(path.join(__dirname + '/public/06_Drawings/index.html'));
+});
+
 const server = app.listen(process.env.PORT || 3000, () => {
 	console.log('Server running on ' + server.address().port);
 });
