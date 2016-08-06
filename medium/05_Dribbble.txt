@@ -1,0 +1,26 @@
+05. Dribbble
+
+Lessons Learned
+1. Spritesheets
+On this project, I wanted to play with spritesheets. Instead of holding 3 separate .jpg files for each of my image assets (an arrow, a hamburger button, a four square grid), you can combine them into one large .jpg file, called a spritesheet. Combining these images  might actually make the total size of the files larger (for example, the 3 separate .jpg might have been 1 kb each, but the combined spritesheet might be 4 kb). So why use spritesheets? The biggest advantage is that there are fewer requests being made to retrieve files; instead of your website making 3 separate requests for each image, it will only make one request.
+
+To use spritesheets, you'll mainly be working with 2 CSS properties: background-image and background-position.
+"background-image" will be the source of your spritesheet.
+"background-position" will be the location of the specific image, or sprite, you are looking for in the spritesheet. If the sprite is 10px from the top and 15px from the left, then you'll have "background-position: 10px 15px". You can also use other values other than px to specify position (such as rem and %'s).
+You will also set the height and width of your HTML element to equal the height and width of the sprite on your spritesheet. You have to make sure that this is precise; if you set the width or height larger than the actual sprite, you may grab parts of other sprites. If you set the width or height smaller than the actual sprite, your sprite will get cut off.
+
+I think spritesheets are a good way to improve loading time, but they can be tedious to work with. When you make any changes to your spritesheet, you'll have to update the background-position values of all your sprites (if they moved). As an alternative, it may be better to use HTML entities (https://dev.w3.org/html5/html-author/charref). There's a hamburger button (&equiv;), an arrow (&xvee;) and something that resembles the four square grid I used (&plusb;). And the great thing about these HTML entities is that it's treated as regular inline-text, so CSS properties such as "font-size" and "color" work on it. To use these HTML entities, just type them into your HTML as if it were regular text (for example, "Hello World &equiv;").
+
+
+2. Box shadow generator
+There are some confusing CSS properties out there that take in many arguments; box shadows are one example. Chrome Dev tools does a great job of letting you play with CSS properties and watch them update in real time, but sometimes it's not efficient when you're dealing with multiple arguments (such as with box-shadow).
+
+But fear not, there are some great websites that will generate CSS properties for you. For the box shadow I used on this project, I used http://www.cssmatic.com/box-shadow. It gives you sliders that you can change which will update the example box-shadow in real time. This UI is definitely a lot friendlier than what the Chrome Dev tools gives you. There are also other websites that generate properties for other elements, like buttons.
+
+Improvements
+This was an incomplete project. I didn't have time to make the website responsive, but I plan on creating SVG images in the coming weeks to populate this pseudo-Dribbble page with.
+
+I used the Sketch Measure plugin to create a styleguide for myself. This was my first time using it, and I found that I didn't include enough details into the styleguide. I had to reopen the Sketch file multiple times to look for missing padding/margin/color values that I didn't think to include in the styleguides. I'll be more aware of this in the future and include much more details in my styleguide. I feel like doing otherwise would waste time if I had to figure out margin values again while I'm coding, if I already calculated the margin values when I was wireframing.
+
+Inspiration
+www.dribbble.com
