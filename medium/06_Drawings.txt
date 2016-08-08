@@ -2,16 +2,16 @@
 
 Lessons Learned
 1. Bezier Curves
-Bezier curves are these tools in drawing applications that help you draw a curve. You click on a point, then drag these handles around to adjust the angle that the curve has. It's a pretty powerful tool, but it was hard for me to pick up. If I just needed a basic shape, bezier curves were a joy to work with. Anything more complicated, and it seemed like pulling teeth (or bezier handles) to get the curve perfectly the way I wanted it.
+Bezier curves are tools in drawing applications that draw curves. You click on a point, then drag handles around to adjust the angle that the curve has. It's a pretty powerful tool, but it was hard for me to pick up. If I just needed a basic shape, bezier curves were a joy to work with. Anything more complicated, and it seemed like pulling teeth (or bezier handles) to get the curve the way I wanted it.
 
-I went into using bezier curves without any prior knowledge or tutorials. I highly suggest taking a tutorial, because for me, bezier curves just didn't seem intuitive.
+I went into using bezier curves without any prior knowledge or taking any tutorials. I highly suggest taking a tutorial beucase bezier curves just didn't seem intuitive to me.
 
 2. Thinking in Shapes
-Because of my lack of drawing skills, I had to hack a lot of my drawing shapes. You can see that the bottom of the beard looks like a pentagon. I hacked that together by putting a triangle on top of a square; it did the trick. I felt like this was similar to thinking of React components; you can break the drawings down in a thousand different ways and get the same result. I'm really interested in seeing how a real experienced designer would've completed this.
+Because of my lack of drawing skills, I had to hack a lot of my drawing shapes. You can see that the bottom of the beard looks like a pentagon; but I hacked it together by putting a triangle on top of a square. I felt like I was thinking in React components; you can break the drawings down a thousand different ways and get the same result. I'm really interested in seeing how a real designer would've completed this.
 
 Improvements
-Practice! I definitely would've practiced more with bezier curves and the tool I was using (Affinity Designer). I also had a design send me this great game/tutorial, http://bezier.method.ac/, that takes you through the basics of bezier curves.
-I have a drawing tablet, and I want to give a shot and drawing some designs using that. I like SVG's in that they're perfect, but when I'm actually drawing them, I find myself going OCD and trying to get every pixel right. I feel like hand-drawn art is nice and organic, and has a gritty feeling to it.
+Practice! I definitely should've practiced more with bezier curves and the program I use for drawing (Affinity Designer). I also had a designer send me this great game/tutorial, http://bezier.method.ac/, that takes you through the basics of bezier curves with some actual drawing exercises.
+I have a drawing tablet, and I want to give a shot at drawing some designs using that. I like SVG's in that they're pixel perfect, but when I'm actually with bezier curves, I find myself going OCD and trying to get every pixel right. I feel like hand-drawn art is nice and organic, and has a gritty feeling to it.
 
 Inspiration
 https://dribbble.com/shots/2078437--This-is-Sparta-Footbl-badge
